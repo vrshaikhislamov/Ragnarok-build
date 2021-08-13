@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-container nav {
+    width: 100%;
+    height: 5vh;
+}
+
+.main-container .character {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 40%;
+    height: 60vh;
+}
+
+.main-container .character .inventory {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: violet;
+}
+
+.inventory-column {
+    display: flex;
+    width: calc(100%/3);
+    flex-direction: column;
+}
+
+.inventory-row {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+}
+
+.img-container {
+    align-self: center;
+    margin: 1vh;
+    width: 6vh;
+    height: 6vh;
+    background-color: red;
+}
+
+.item-description {
+    align-self: center;
+    margin-right: 1vh;
+    flex-grow: 1;
+    height: 6vh;
+    background-color: red;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.hero-image img {
+    height: 40vh;
+}
+
+.main-container .character .characteristics {
+    width: 100%;
+    height: 20vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: violet;
+}
+
+.main-container .character canvas {
+    width: 400px;
+    height: 400px;
+}
+
+.main-container .stats {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 60%;
+    height: 60vh;
+    padding: 10px;
+}
+
+.main-container .stats .hero-info {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: rgb(255, 196, 0);
+}
+
+.main-container .stats .stat {
+    cursor: pointer;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px; 
+}
+
+.stat.base {
+    background-color: yellow; 
+}
+
+.stat.calc {
+    background-color: rgba(9, 255, 0, 0.952); 
+}
+
+.stat .name {
+    text-align: center;
+    font-weight: bold;
+    padding: 25px;
+}
+
+.stat .text {
+    text-align: center;
+    color: royalblue;
+}
+
+/* Tooltip text */
+.stat .tooltiptext {
+    visibility: hidden;
+    background-color: white;
+    border: 2px solid red;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .stat:hover .tooltiptext {
+    visibility: visible;
+  }
